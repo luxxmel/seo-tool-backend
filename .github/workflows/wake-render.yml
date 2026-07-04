@@ -8,7 +8,8 @@ on:
 jobs:
   wake:
     runs-on: ubuntu-latest
+
     steps:
       - name: Wake Render
         run: |
-          curl -L --max-time 60 https://seo-tool-backend-phw2.onrender.com/ || true
+          curl -fsSL --max-time 60 https://seo-tool-backend-phw2.onrender.com/api/seo/health
