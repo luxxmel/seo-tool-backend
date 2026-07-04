@@ -11,4 +11,4 @@ jobs:
     steps:
       - name: Wake Render
         run: |
-          curl -L --max-time 60 https://seo-tool-backend-phw2.onrender.com/ping || true
+          curl -L --max-time 60 https://seo-tool-backend-phw2.onrender.com/ || true
