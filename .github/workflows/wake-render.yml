@@ -1,0 +1,14 @@
+name: Wake Render Backend
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch:
+
+jobs:
+  wake:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Wake Render
+        run: |
+          curl -L --max-time 60 https://seo-tool-backend-phw2.onrender.com/ping || true
